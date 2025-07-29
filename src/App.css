@@ -1,0 +1,152 @@
+:root {
+  --blue: #1d4ed8;
+  --blue-hover: #2563eb;
+  --gray: #6b7280;
+  --gray-dark: #374151;
+  --text-dark: #333;
+  --bg-light: #f9f9f9;
+  --bg-white: #ffffff;
+  --border-light: #ddd;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--blue-hover);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+button:hover {
+  background-color: var(--blue-hover);
+}
+button:active {
+  transform: scale(0.98);
+}
+
+/* Forms */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--bg-white);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border 0.2s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: var(--blue);
+  outline: none;
+}
+
+/* Summary Page */
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.summary h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.summary p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Cards */
+.card {
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card a {
+  font-weight: bold;
+}
+
+.card .edit-link {
+  font-size: 15px;
+  color: var(--gray);
+  transition: color 0.2s ease;
+}
+.card .edit-link:hover {
+  color: var(--gray-dark);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px 0;
+  background-color: var(--blue);
+  color: #fff;
+  font-size: 14px;
+  margin-top: 40px;
+}
